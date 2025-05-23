@@ -6,16 +6,16 @@ class Category:
     name: str
     description: str
     products: list
-    numbers_cat = 0
-    numbers_prod = 0
+    category_count = 0
+    product_count = 0
 
     def __init__(self, name, description, products=None):
         '''Метод, который инициализирует атрибуты класса Category:'''
         self.name = name
         self.description = description
         self.products = products if products else []
-        Category.numbers_cat += 1
-        Category.numbers_prod += len(products) if products else 0
+        Category.category_count += 1
+        Category.product_count += len(products) if products else 0
 
 # if __name__ == "__main__":
 #    product1 = Product("Apple", "Red", 215.00, 10)
@@ -29,5 +29,5 @@ class Category:
 #    print(cat1.description)
 #    print(cat1.products)
 
-#    print(cat1.numbers_cat)
-#    print(cat1.numbers_prod)
+#    print(cat1.category_count)
+#    print(cat1.product_count)
