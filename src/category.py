@@ -1,6 +1,5 @@
 # from products import Product
 
-
 class Category:
     '''Класс с информацией о категориях продуктов'''
     name: str
@@ -10,7 +9,7 @@ class Category:
     product_count = 0
 
     def __init__(self, name: str, description: str, products: list):
-        '''Метод, который инициализирует атрибуты класса Category:'''
+        '''Метод, который инициализирует атрибуты класса:'''
         self.name = name
         self.description = description
         self.products = products if products else []
