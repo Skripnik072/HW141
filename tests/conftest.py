@@ -18,3 +18,8 @@ def category2():
 @pytest.fixture()
 def product1():
     return Product("Apple", "Red", 215.00, 10)
+
+
+@pytest.fixture()
+def product2():
+    return Product("Apple", "Red", 0, 10)
