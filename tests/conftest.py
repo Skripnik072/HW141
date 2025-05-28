@@ -2,7 +2,6 @@ import pytest
 from src.products import Product
 from src.category import Category
 
-
 @pytest.fixture()
 def category1():
     return Category("Fruit", "Japan",
@@ -18,7 +17,6 @@ def category2():
 @pytest.fixture()
 def product1():
     return Product("Apple", "Red", 215.00, 10)
-
 
 @pytest.fixture()
 def product2():

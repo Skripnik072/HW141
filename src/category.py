@@ -1,5 +1,6 @@
 from src.products import Product
 
+
 class Category:
     '''Класс с информацией о категориях продуктов'''
     name: str
@@ -16,32 +17,30 @@ class Category:
         Category.category_count += 1
         Category.product_count += len(products) if products else 0
 
-
-    def __str__(self):
+    def __str__(self) -> str:
         all_quantity = sum(product.quantity for product in self.__products)
         return f"{self.name}, количество продуктов: {all_quantity} шт."
 
-
-    def add_product(self, product: Product):
+    def add_product(self, product: Product) -> str:
         self.__products.append(product)
         return f"{self.__products}"
 
-
     @property
-    def products(self):
+    def products(self) -> str:
         prod_str = ""
         for prod in self.__products:
             prod_str += f"{str(prod)}\n"
         return prod_str
 
     @products.setter
-    def products(self, product: Product):
+    def products(self, product: Product) -> int:
         self.add_product(product)
         Category.product_count += 1
 
     @property
-    def product_in_list(self):
+    def product_in_list(self) -> list:
         return self.__products
+
 
 if __name__ == "__main__":
     product1 = Product("Apple", "Red", 215.00, 10)
