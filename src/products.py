@@ -40,16 +40,19 @@ class Product:
             self.__price = price
         return
 
-# product1 = Product("Plum", "Red", 215.00, 10)
+#product1 = Product("Plum", "Red", 215.00, 10)
 
-# print(product1.name)
-# print(product1.description)
-# print(product1.gprice)
-# print(product1.quantity)
+#print(product1.name)
+#print(product1.description)
+#print(product1.gprice)
+#print(product1.quantity)
 
-# product2= Product("Plum", "Black",255.00, 7)
+#product2= Product("Plum", "Black",255.00, 7)
 
-# print(product2.name)
-# print(product2.description)
-# print(product2.gprice)
-# print(product2.quantity)
+#print(product2.name)
+#print(product2.description)
+#print(product2.gprice)
+#print(product2.quantity)
+
+#print(str(product1))
+#print(product1 + product2)
