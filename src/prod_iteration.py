@@ -19,7 +19,9 @@ class ProdIterator:
         else:
             raise StopIteration
 
+
 if __name__ == "__main__":
+
     product1 = Product("Apple", "Red", 215.00, 10)
     product2 = Product("Orang", "Yellou", 240.00, 9)
     product3 = Product("Greyp", "Blue", 250.00, 8)

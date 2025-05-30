@@ -1,3 +1,4 @@
+import pytest
 
 
 def test_catecory_init(category1, category2):
@@ -22,3 +23,13 @@ def test_category_setter(category1, product1):
 
 def test_category_str(category1):
     assert str(category1) == "Fruit, количество продуктов: 19 шт."
+
+
+def test_category_setter_error(category1, product1):
+    with pytest.raises(TypeError):
+        category1.products = 1
+
+
+def test_category_setter_smart(category1, smartf1):
+    category1.products = smartf1
+    assert category1.product_in_list[-1].name == "Samsung"

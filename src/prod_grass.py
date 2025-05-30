@@ -1,5 +1,4 @@
-from products import Product
-from prod_smart import Smartphone
+from src.products import Product
 
 
 class LawnGrass(Product):
@@ -16,20 +15,20 @@ class LawnGrass(Product):
         else:
             raise TypeError
 
-if __name__ == "__main__":
-    grass = LawnGrass("Sama", "Hich", 215.00, 12, "JUSE", 30, "green")
-    grass1 = LawnGrass("Gama", "Hich", 235.00, 2, "JUSE", 30, "orange")
-    smartf = Smartphone("Samsung", "Classs", 21500.00, 10, 1000, "S-5", 8, 'Blue')
-    product1 = Product("Plum", "Red", 215.00, 10)
+# if __name__ == "__main__":
+#    grass = LawnGrass("Sama", "Hich", 215.00, 12, "JUSE", 30, "green")
+#    grass1 = LawnGrass("Gama", "Hich", 235.00, 2, "JUSE", 30, "orange")
+#    smartf = Smartphone("Samsung", "Classs", 21500.00, 10, 1000, "S-5", 8, 'Blue')
+#    product1 = Product("Plum", "Red", 215.00, 10)
 
-    print(grass.name)
-    print(grass.description)
-    print(grass.gprice)
-    print(grass.quantity)
+#    print(grass.name)
+#    print(grass.description)
+#    print(grass.gprice)
+#    print(grass.quantity)
 
-    print(grass.name)
-    print(grass.country)
-    print(grass.germination_period)
-    print(grass.color)
+#    print(grass.name)
+#    print(grass.country)
+#    print(grass.germination_period)
+#    print(grass.color)
 
-    print(grass + grass1)
+#    print(grass + grass1)

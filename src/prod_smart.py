@@ -1,4 +1,4 @@
-from products import Product
+from src.products import Product
 
 
 class Smartphone(Product):
@@ -16,19 +16,19 @@ class Smartphone(Product):
         else:
             raise TypeError
 
-if __name__ == "__main__":
-    smartf = Smartphone("Samsung", "Classs", 21500.00, 10, 1000, "S-5", 8, 'Blue')
+# if __name__ == "__main__":
+#    smartf = Smartphone("Samsung", "Classs", 21500.00, 10, 1000, "S-5", 8, 'Blue')
 
-    print(smartf.name)
-    print(smartf.description)
-    print(smartf.gprice)
-    print(smartf.quantity)
+#    print(smartf.name)
+#    print(smartf.description)
+#    print(smartf.gprice)
+#    print(smartf.quantity)
 
-    print(smartf.efficiency)
-    print(smartf.model)
-    print(smartf.memory)
-    print(smartf.color)
+#    print(smartf.efficiency)
+#    print(smartf.model)
+#    print(smartf.memory)
+#    print(smartf.color)
 
-    smartf2 = Smartphone("Samsung", "Classs", 22000.00, 20, 1000, "S-5", 8, 'Blue')
+#    smartf2 = Smartphone("Samsung", "Classs", 22000.00, 20, 1000, "S-5", 8, 'Blue')
 
-    print(smartf + smartf2)
+#    print(smartf + smartf2)

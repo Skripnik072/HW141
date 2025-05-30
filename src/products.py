@@ -40,6 +40,7 @@ class Product:
             self.__price = price
         return
 
+
 product1 = Product("Plum", "Red", 215.00, 10)
 
 # print(product1.name)
@@ -47,7 +48,8 @@ product1 = Product("Plum", "Red", 215.00, 10)
 # print(product1.gprice)
 # print(product1.quantity)
 
-product2= Product("Plum", "Black",255.00, 7)
+product2 = Product("Plum", "Black", 255.00, 7)
+
 
 # print(product2.name)
 # print(product2.description)
