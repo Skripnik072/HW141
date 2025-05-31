@@ -1,4 +1,8 @@
-class Product:
+from base_products import BaseProduct
+from print_mixin import PrintMixin
+
+
+class Product(BaseProduct, PrintMixin):
     '''Класс для информации о продуктах'''
     name: str
     description: str
@@ -11,6 +15,7 @@ class Product:
         self.description = description
         self.__price = price
         self.quantity = quantity
+        super().__init__()
 
     def __str__(self) -> str:
         return f"{self.name}, {self.__price} руб. Остаток: {self.quantity} шт."
@@ -43,18 +48,18 @@ class Product:
 
 product1 = Product("Plum", "Red", 215.00, 10)
 
-# print(product1.name)
-# print(product1.description)
-# print(product1.gprice)
-# print(product1.quantity)
+print(product1.name)
+print(product1.description)
+print(product1.gprice)
+print(product1.quantity)
 
 product2 = Product("Plum", "Black", 255.00, 7)
 
 
-# print(product2.name)
-# print(product2.description)
-# print(product2.gprice)
-# print(product2.quantity)
+print(product2.name)
+print(product2.description)
+print(product2.gprice)
+print(product2.quantity)
 
-# print(str(product1))
+print(str(product1))
 print(product1 + product2)
