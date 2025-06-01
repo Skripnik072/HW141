@@ -1,4 +1,6 @@
 from src.products import Product
+from src.base_products import BaseProduct
+
 
 def test_products_init(product1):
     assert product1.name == "Apple"
