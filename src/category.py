@@ -61,6 +61,7 @@ class Category:
         except ZeroDivisionError:
             return 0
 
+
 if __name__ == "__main__":
     product1 = Product("Apple", "Red", 215.00, 10)
     product2 = Product("Orang", "Yellou", 240.00, 9)

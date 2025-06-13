@@ -1,5 +1,4 @@
 from src.products import Product
-from src.base_products import BaseProduct
 
 
 def test_products_init(product1):
@@ -16,12 +15,15 @@ def test_product_create():
     product1.gprice = 215.00
     product1.quantity = 10
 
+
 def test_product_upgrade(product1):
     product1.gprice = -1
     assert product1.gprice == "215.0"
 
+
 def test_product_str(product1):
     assert str(product1) == "Apple, 215.0 руб. Остаток: 10 шт."
+
 
 def test_product_add(product1, product2):
     assert product1 + product2 == 2150

@@ -11,11 +11,13 @@ class Smartphone(Product):
         self. memory = memory
         self.color = color
 
+
     def __add__(self, other: str) -> int:
         if type(other) is Smartphone:
             return self.quantity + other.quantity
         else:
             raise TypeError
+
 
 # if __name__ == "__main__":
 #    smartf = Smartphone("Samsung", "Classs", 21500.00, 10, 1000, "S-5", 8, 'Blue')

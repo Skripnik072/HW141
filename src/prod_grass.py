@@ -16,6 +16,7 @@ class LawnGrass(Product):
         else:
             raise TypeError
 
+
 # if __name__ == "__main__":
 #    grass = LawnGrass("Sama", "Hich", 215.00, 12, "JUSE", 30, "green")
 #    grass1 = LawnGrass("Gama", "Hich", 235.00, 2, "JUSE", 30, "orange")

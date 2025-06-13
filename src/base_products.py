@@ -8,4 +8,3 @@ class BaseProduct(ABC):
     def new_product(cls, *args, **kwargs):
         '''Создан абстрактный метод для ввода нового продукта'''
         pass
-

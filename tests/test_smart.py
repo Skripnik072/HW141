@@ -1,6 +1,4 @@
 import pytest
-from src.products import Product
-from src.prod_smart import Smartphone
 
 
 def test_smart_init(smartf1):
@@ -10,6 +8,7 @@ def test_smart_init(smartf1):
     assert smartf1.model == "S-5"
     assert smartf1.memory == 8
     assert smartf1.color == 'Blue'
+
 
 def test_smart_add(smartf1, smartf2):
     assert smartf1 + smartf2 == 30
